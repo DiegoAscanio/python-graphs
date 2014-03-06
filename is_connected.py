@@ -1,9 +1,7 @@
 '''
 
-	Connected Graph - Checks if a graph in the form of a dictionary is 
+	is_connected - Checks if a graph in the form of a dictionary is 
 	connected or not, using Breadth-First Search Algorithm (BFS)
-
-	Author: Diego Ascanio Santos
 
 '''
 
@@ -20,6 +18,4 @@ def is_connected(g):
 				S.append(v)
 			color[u] = 'black'
 	return list(color.values()).count('black') == len(g.keys())
-
-g = {1: [2, 3], 2: [1, 3], 3: [1, 2]}
 
